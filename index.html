@@ -4,170 +4,13 @@
 <head>
 	<meta charset="utf-8">
 	<title>RADAR</title>
-
 	<meta name="viewport" content="initial-scale=1.0; width=device-width">
-
-	<style type="text/css">
+	<style>
 		* {
 			box-sizing: border-box;
 		}
-
-		html,
-		body {
-			margin: 0;
-			padding: 0;
-			font-family: sans-serif;
-			font-size: 1.1em;
-			text-align: center;
-			color: #FFF;
-		}
-
-		.hg-sidebar {
-			background: #F34A4E;
-		}
-
-		.radar-content {
-			color: #f3f5f8;
-		}
-
-		.radar {
-			min-height: 100vh;
-		}
-
-		.radar,
-		.radar-body {
-			display: flex;
-			flex: 1 1 auto;
-			flex-direction: column;
-		}
-
-		.radar-content {
-			flex: 1 1 auto;
-		}
-
-		@media (min-width: 768px) {
-			.radar-body {
-				flex-direction: column;
-			}
-		}
-
-		@media (min-width:960px) {
-			.main-header .container {
-				justify-content: space-between;
-			}
-		}
-		@media (min-width:960px) {
-			.main-footer .container {
-				justify-content: space-between;
-			}
-		}
-		
-		.background,
-		.div_product,
-		.container {
-			padding-right: 182px;
-			padding-left: 182px;
-		}
-		
-		.main-header .container {
-			display: flex;
-			align-items: center;
-			flex-wrap: wrap;
-		}
-
-		.main-header {
-			background: #07111d;
-			box-shadow: 0 1px 6px rgba(0, 0, 0, .1);
-		}
-
-		.main-footer {			
-			background: #060f1a;
-			box-shadow: 0 1px 6px rgba(0, 0, 0, .1);
-		}
-
-		.main-nav a {
-			font-size: 0.75em;
-			font-weight: bold;
-			letter-spacing: 0.1em;
-			color: #FFFFFF;
-			text-decoration: none;
-		}
-
-		.main-nav a:hover {
-			color: #7351da;
-		}
-
-		.main-nav ul {
-			margin: 0;
-			padding: 0;
-		}
-
-		.main-nav ul {
-			margin: 1em 0 .5em;
-			text-align: center;
-		}
-
-		.main-nav a {
-			margin: .5em 1.5em;
-		}
-
-		.header-logo {			
-			font-size: 32px;
-			color: #FFFFFF;
-		}
-
-		.main-nav-list li {
-			display: inline;
-		}
-
-		.main-nav li:last-child a {
-
-			width: fit-content;
-		}
-		.main-nav li:last-child {
-
-			padding: 1px;
-		}
-		.background {
-			background-color: #07111d;
-			width:100%;
-		}
-		.div_wordpress {
-			margin-left:200px;
-			margin-right:200px;
-			margin-top:95px;
-		}
-		.div_product {
-			background-color: #f6f8fa;
-		}
-		.wordpress_title {
-			font-size: 70px;
-		}
-		.wordpress_content {
-			color: #8ea5c6;
-		}
-		.product_title,
-		.product_content {
-			color: #4e5559;
-			text-align: initial;			
-		}
-		.product_title {
-			font-size: 48px;
-			font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-		}
-		.product_two_row {
-			display: flex;
-			flex: 1 1 auto;
-			flex-direction: column;
-			padding: 20px;
-		}
-		@media (min-width: 768px) {
-			.product_two_row {
-				flex-direction: row;
-			}
-		}
 	</style>
-
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="radar">
@@ -195,7 +38,7 @@
 	<div class="radar-body">
 		<div class="background">
 			<div class="content_wordpress">
-				<div>
+				<div style="text-align:left;">
 					<div>
 						<p class="wordpress_title"> Exceptional Themes For Wordress</p>
 					</div>
@@ -281,8 +124,23 @@
 			</div>
 		</div>
 
-		<div class="future">
-
+		<div class="background">
+			<div class="content_future">
+				<div>
+					<div>
+						<p class="future_title"> The Future is here.</p>
+					</div>
+					<div>
+						<p class="future_content">Discover all the ways the Radar can help streamline your creative workflows.</p>
+					</div>					
+				</div>
+				<div>
+					
+				</div>
+				<div>
+					
+				</div>
+			</div>
 		</div>
 
 	</div>
@@ -290,6 +148,7 @@
 		<div class="container">
 			<h1 class="main-logo">
 				<p class="header-logo"> RADAR </p>
+				<p class="copyright"> © 2023 Radar. All rights reserved.</p>
 			</h1>
 			<nav class="main-nav">
 				<ul class="main-nav-list">
