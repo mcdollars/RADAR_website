@@ -1,12 +1,13 @@
-
 @font-face {
     font-family: 'futura';
     src: url(../font/futura/futura\ light\ bt.ttf);
 }
+
 @font-face {
     font-family: 'futura-bold';
     src: url(../font/futura/Futura\ XBlk\ BT.ttf);
 }
+
 html,
 body {
     margin: 0;
@@ -40,42 +41,17 @@ body {
     flex: 1 1 auto;
 }
 
-@media (min-width: 768px) {
-    .radar-body {
-        flex-direction: column;
-    }
-    .wordpress_title {
-        width: 300px;
-    }
-    .wordpress_content {
-        width: 922px;
-    }
-}
-
-@media (min-width:960px) {
-    .main-header .container {
-        justify-content: space-between;
-    }
-    .wordpress_title {
-        width: 600px;
-    }
-    .wordpress_content {
-        width: 922px;
-    }
-}
-
-
 .background,
-.div_product,
 .container {
-    padding-right: 182px;
-    padding-left: 182px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .main-header .container {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .main-header {
@@ -83,13 +59,19 @@ body {
     box-shadow: 0 1px 6px rgba(0, 0, 0, .1);
 }
 
-.main-footer {			
+.main-footer {
     background: #060f1a;
     box-shadow: 0 1px 6px rgba(0, 0, 0, .1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .main-nav a {
-    font-size: 20px;    
+    font-size: 20px;
     color: #FFFFFF;
     text-decoration: none;
 }
@@ -112,76 +94,264 @@ body {
     margin: 10px;
 }
 
-.header-logo {			
+.header-logo {
     font-size: 32px;
     color: #FFFFFF;
     font-family: 'futura-bold';
 }
 
 .main-nav-list li {
-    display: inline;    
+    display: inline;
 }
 
 .main-nav li:last-child a {
 
     width: fit-content;
 }
+
 .main-nav li:last-child {
 
     padding: 1px;
 }
+
 .background {
     background-color: #07111d;
-    width:100%;
+    width: 100%;
 }
+
 .div_wordpress {
-    margin-left:200px;
-    margin-right:200px;
-    margin-top:95px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 95px;
 }
+
 .div_product {
     background-color: #f6f8fa;
 }
+
 .wordpress_title {
-    font-size: 70px;    
-    font-family:'futura';
+    width: 600px;
+    font-size: 70px;
+    font-family: 'futura';
 }
+
 .wordpress_content {
-    color: #8ea5c6;    
+    color: #8ea5c6;
     font-size: 21px;
-    font-family:'futura';
+    font-family: 'futura';
+    width: 60%;
 }
-.product_title{
+
+.product_title {
     color: #4e5559
 }
+
 .product_content {
     color: #818181;
-    text-align: initial;	    
+    text-align: initial;
 }
+
 .product_title {
     font-size: 48px;
-    font-family:'Futura';
+    font-family: 'Futura';
 }
+
 .product_two_row {
-    display: flex;
-    flex: 1 1 auto;
-    flex-direction: column;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
 }
-@media (min-width: 768px) {
-    .product_two_row {
-        flex-direction: row;
-    }
-}
+
 .future_title {
     font-size: 54px;
     color: #FFFFFF;
-    font-family:'futura';
-    margin:0px;
-    padding:0px;
+    font-family: 'futura';
+    margin: 0px;
+    padding: 0px;
 }
+
 .future_content {
     font-size: 24px;
     color: #c8c8c8;
-    font-family:'futura';
+    font-family: 'futura';
+}
+
+.hero_buttons {
+    gap: 30px;
+    text-align: left;
+    margin-bottom: 115px;
+    margin-top: 41px;
+    display: flex;
+}
+
+.padding_product_content {
+    margin-top: 360px;
+    margin-bottom: 214px;
+}
+
+.future_chart {
+    display: flex;
+    padding-left: 167px;
+    padding-right: 167px;
+    padding-top: 63px;
+}
+
+.future_chart .padding-y {
+    padding-bottom: 223px;
+    padding-top: 118px;
+}
+
+.daily_output {
+    background-color: #07111d;
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.daily_output .tasks {
+    max-width: 776px;
+    width: 100%;
+    margin-top: 63px;
+    border: 1px solid #8e6bf2;
+    border-radius: 6px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    position: relative;
+}
+
+.favorite {
+    padding-left: 213px;
+    padding-right: 213px;
+    padding-top: 153px;
+    padding-bottom: 171px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .radar-body {
+        flex-direction: column;
+    }
+
+    .product_two_row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .background,
+    .container {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .main-footer {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .future_chart {
+        flex-direction: column;
+        padding-top: 0px;
+    }
+
+    .future_chart .future_lines {
+        display: none;
+    }
+
+    .future_chart .padding-y {
+        padding-top: 30px;
+        padding-bottom: 59px;
+    }
+
+    .future_chart p {
+        padding: 16px !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+
+    .daily_output .content {
+        margin: 0px !important;
+        padding: 16px;
+    }
+
+    .daily_output p {
+        margin-top: 20px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .main-footer {
+        flex-direction: column;
+    }
+
+    .main-footer p {
+        text-align: center;
+    }
+
+    .gradient_line {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .daily_output .boxes {
+        display: none;
+    }
+
+    .daily_output div:first-child {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .favorite {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 610px) {
+    .wordpress_line {
+        display: none;
+    }
+
+    .wordpress_title {
+        font-size: 40px;
+        width: 100%;
+    }
+
+    .wordpress_content {
+        width: 100%;
+    }
+
+    .hero_buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .padding_product_content {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .background,
+    .container {
+        padding-right: 200px;
+        padding-left: 200px;
+    }
+
+    .main-footer {
+        padding-left: 165px;
+        padding-right: 165px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .lines {
+        display: none;
+    }
+
+    .future_chart {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
